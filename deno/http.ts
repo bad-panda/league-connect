@@ -2,6 +2,14 @@ import { Credentials, Request } from '../shared/types.ts'
 import { authenticate } from './authenticate.ts'
 import { trimSlashes } from '../shared/utils.ts'
 
+/**
+ * Send a http request to an endpoint of the league client rest api
+ *
+ * @param options - The request options to pass to the endpoint
+ * @param credentials - The credentials to authenticate with
+ *
+ * @returns The node-fetch response from the http request
+ */
 export async function request(
   options: Request,
   credentials: Credentials | undefined = undefined

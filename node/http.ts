@@ -14,7 +14,7 @@ import { trimSlashes } from '../shared/utils'
  */
 export async function request(
   options: Request,
-  credentials?: Credentials | undefined = undefined
+  credentials: Credentials | undefined = undefined
 ): Promise<Response> {
   const _credentials = credentials || await authenticate()
   const uri = trimSlashes(options.url)
