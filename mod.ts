@@ -1,1 +1,5 @@
 export * from './shared/types.ts'
+export * from './deno/websocket.ts'
+export * from './deno/http.ts'
+export * from './deno/authenticate.ts'
+export * from './deno/connection.ts'
